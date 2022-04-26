@@ -90,6 +90,10 @@ h6 {
   margin-bottom: 0;
 }
 
+footer h6 {
+  padding: 16px;
+}
+
 .success {
   background-color: green;
 }

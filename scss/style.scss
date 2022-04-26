@@ -3,8 +3,7 @@
  */
 
 // GENERAL PADDING VARIABLES
-$red: 16px;
-$blue: 8px;
+$g-padding: 8px;
 
 
 /*
@@ -56,7 +55,7 @@ article {
     flex-basis: 45%;
     border: 1px silver solid;
     @include shadow();
-    padding: $red;
+    padding: $g-padding*2;
     margin: 16px;
     clear: both;
     overflow: auto;
@@ -109,6 +108,12 @@ h6 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 0;
+}
+
+footer {
+  h6 {
+    padding: $g-padding*2;
+  }
 }
 
 .message {
