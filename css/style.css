@@ -5,16 +5,6 @@
   ==== ALL OF MY MIXINS ====
  */
 /*
-  ==== ALL OF MY EXTENDS ====
- */
-.warning, .error, .success, .message {
-  border: 1px solid #ccc;
-  color: #2748b3;
-  background-color: rgb(243, 230, 230);
-  width: 100%;
-}
-
-/*
   ==== MY DOCUMENTS SCSS ====
  */
 body {
@@ -92,6 +82,13 @@ h6 {
 
 footer h6 {
   padding: 16px;
+}
+
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  color: #2748b3;
+  background-color: rgb(243, 230, 230);
+  width: 100%;
 }
 
 .success {
