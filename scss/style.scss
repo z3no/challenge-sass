@@ -12,12 +12,24 @@ $blue: 8px;
  */
 
 // BOX SHADOW
-@mixin shadow($h-offset: 10px, $v-offset: 10px, $blur: 19px, $spread -4px, $color: rgba(255, 255, 255, 0.75)) {
+@mixin shadow($h-offset: 10px, $v-offset: 10px, $blur: 19px, $spread: -4px, $color: rgba(255, 255, 255, 0.75)) {
   -webkit-box-shadow: $h-offset $v-offset $blur $spread $color;
   -moz-box-shadow: $h-offset $v-offset $blur $spread $color;
   box-shadow: $h-offset $v-offset $blur $spread $color;
 }
 
+
+/*
+  ==== ALL OF MY EXTENDS ====
+ */
+
+// MESSAGES
+%re-message {
+  border: 1px solid #ccc;
+  color: #2748b3;
+  background-color: rgb(243, 230, 230);
+  width: 100%;
+}
 
 /*
   ==== MY DOCUMENTS SCSS ====
@@ -43,7 +55,7 @@ article {
     flex-grow: 1;
     flex-basis: 45%;
     border: 1px silver solid;
-    @include shadow;
+    @include shadow();
     padding: $red;
     margin: 16px;
     clear: both;
@@ -83,43 +95,37 @@ article {
   }
 }
 
-h1, h2, h6 {
+h1,
+h2,
+h6 {
   color: #6B8EFF;
+}
 
-  h1, h6 {
-    text-align: center;
+h1 {
+  text-align: center;
+}
 
-    h6{
-      font-size: 2em;
-      padding: $red*2;
-      margin-bottom: 0;
-    }
-  }
+h6 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
 }
 
 .message {
-
-}
-
-.message,
-.success,
-.error,
-.warning {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #2748B3;
-  background-color: #000;
-  width: 100%
+  @extend %re-message;
 }
 
 .success {
+  @extend %re-message;
   background-color: green
 }
 
 .error {
+  @extend %re-message;
   background-color: red
 }
 
 .warning {
+  @extend %re-message;
   background-color: orange
 }
