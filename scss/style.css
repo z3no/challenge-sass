@@ -55,5 +55,48 @@ article code {
   display: block;
   word-wrap: break-word;
 }
+article code .before {
+  float: left;
+  width: 40%;
+}
+article code .after {
+  float: right;
+  width: 40%;
+}
+
+h1, h2, h6 {
+  color: #6B8EFF;
+}
+h1 h1, h1 h6, h2 h1, h2 h6, h6 h1, h6 h6 {
+  text-align: center;
+}
+h1 h1 h6, h1 h6 h6, h2 h1 h6, h2 h6 h6, h6 h1 h6, h6 h6 h6 {
+  font-size: 2em;
+  padding: 32px;
+  margin-bottom: 0;
+}
+
+.message,
+.success,
+.error,
+.warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #2748B3;
+  background-color: #000;
+  width: 100%;
+}
+
+.success {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+}
+
+.warning {
+  background-color: orange;
+}
 
 /*# sourceMappingURL=style.css.map */
