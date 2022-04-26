@@ -86,6 +86,7 @@ footer h6 {
 
 .warning, .error, .success, .message {
   border: 1px solid #ccc;
+  padding: 10px;
   color: #2748b3;
   background-color: rgb(243, 230, 230);
   width: 100%;

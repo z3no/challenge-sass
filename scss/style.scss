@@ -109,6 +109,7 @@ footer {
 // EXTEND FOR THE MESSAGES
 %re-message {
   border: 1px solid #ccc;
+  padding: $g-padding+2;
   color: #2748b3;
   background-color: rgb(243, 230, 230);
   width: 100%;
