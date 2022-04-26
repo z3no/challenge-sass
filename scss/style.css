@@ -46,7 +46,7 @@ article section {
   overflow: auto;
   box-sizing: border-box;
 }
-article section #selling-points {
+article section#selling-points {
   flex-grow: 2;
   flex-basis: 100%;
 }
